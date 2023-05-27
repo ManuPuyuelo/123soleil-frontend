@@ -1,21 +1,20 @@
 fetch("https://123soleil-back.manupuyuelo.com/weather", { method: "GET" })
   .then((response) => response.json())
   .then((data) => {
-    if (data.weather && data.currentPosWeather) {
-      // Current position
-      document.querySelector("#currentPos").innerHTML = `
-			<div id="leftSide">
-				<p id="currentPosName">${data.currentPosWeather.cityName}</p>
-				<p id="currentPosDescription">${data.currentPosWeather.description}</p>
-				<div class="temperature">
-					<p id="currentPosTempMin">${data.currentPosWeather.tempMin}°C</p>
-					<span>-</span>
-					<p id="currentPosTempMax">${data.currentPosWeather.tempMax}°C</p>
-				</div>
-			</div>
-			<img id="currentPosIcon" src="images/${data.currentPosWeather.main}.png"/>
-			`;
-
+    if (data.weather /*&& data.currentPosWeather*/) {
+      // // Current position
+      // document.querySelector("#currentPos").innerHTML = `
+      // <div id="leftSide">
+      // 	<p id="currentPosName">${data.currentPosWeather.cityName}</p>
+      // 	<p id="currentPosDescription">${data.currentPosWeather.description}</p>
+      // 	<div class="temperature">
+      // 		<p id="currentPosTempMin">${data.currentPosWeather.tempMin}°C</p>
+      // 		<span>-</span>
+      // 		<p id="currentPosTempMax">${data.currentPosWeather.tempMax}°C</p>
+      // 	</div>
+      // </div>
+      // <img id="currentPosIcon" src="images/${data.currentPosWeather.main}.png"/>
+      // `;
       for (let i = 0; i < data.weather.length; i++) {
         document.querySelector("#cityList").innerHTML += `
 				<div class="cityContainer">
