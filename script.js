@@ -1,4 +1,4 @@
-fetch("https://123soleil-back.manupuyuelo.com/weather")
+fetch("https://123soleil-back.manupuyuelo.com/weather", { method: "GET" })
   .then((response) => response.json())
   .then((data) => {
     if (data.weather && data.currentPosWeather) {
