@@ -210,12 +210,8 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
-  #header {
-    height: 15vh;
-  }
   #cityNameInput {
-    width: 50vw;
-    height: 80px;
+    width: 30vw;
   }
   #cityList {
     flex-direction: column;
