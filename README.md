@@ -9,5 +9,6 @@ Weather tracking website
 - Weather data storage in a database
 
 ## Technologies Used
-- [Backend & Database](https://github.com/ManuPuyuelo/123soleil-backend) : Node.js, Express, MongoDB
 - Frontend : HTML, CSS, Javascript
+- [Backend & Database](https://github.com/ManuPuyuelo/123soleil-backend) : Node.js, Express, MongoDB
+
