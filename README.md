@@ -1,4 +1,4 @@
-# 123Soleil - Frontend
+# ⛅ 123Soleil - Frontend
 
 Weather tracking website
 
